@@ -2,6 +2,8 @@
 
 Flutter widget-recording comparison app. See `recordingRequirement.md` for the original problem statement and `recorderPlan.md` for the implementation plan and ranking table.
 
+[LLD: Engineering Doc](https://bright-daffodil-e363c1.netlify.app/ "Engineering Documentation")
+
 ## Project Structure
 
 The project follows a feature-first architecture with a separation between
