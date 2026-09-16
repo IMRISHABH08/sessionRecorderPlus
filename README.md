@@ -1,4 +1,4 @@
-# azodha
+# SessionRecorderPlus
 
 Flutter widget-recording comparison app. See `recordingRequirement.md` for the original problem statement and `recorderPlan.md` for the implementation plan and ranking table.
 
@@ -119,7 +119,7 @@ lib
 
 ## How the recording & upload pipeline works
 
-This report covers the two custom-built recording approaches in `azodha`: **`widget_recorder_plus`**, paired with a from-scratch chunked upload pipeline, and **Hybrid**, a lightweight event-triggered screenshot + timeline tracker. Both solve the same underlying problem — capturing a user's session indefinitely, without a manual stop, in a way that's safe to upload — using very different capture strategies.
+This report covers the two custom-built recording approaches in `SessionRecorderPlus`: **`widget_recorder_plus`**, paired with a from-scratch chunked upload pipeline, and **Hybrid**, a lightweight event-triggered screenshot + timeline tracker. Both solve the same underlying problem — capturing a user's session indefinitely, without a manual stop, in a way that's safe to upload — using very different capture strategies.
 
 ### Big picture
 
