@@ -1,30 +1,18 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:azodha/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  testWidgets('Home page lists the non-Clarity recorder approaches', (
+    tester,
+  ) async {
+    await tester.pumpWidget(const RecorderComparisonApp());
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
-
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    expect(find.text('Recorder comparison'), findsWidgets);
+    expect(find.text('Hybrid: screenshots + timeline'), findsOneWidget);
+    expect(find.text('widget_recorder_plus: video'), findsOneWidget);
+    // Clarity is hidden from the home page, not removed — its code path
+    // stays reachable, just not linked from here.
+    expect(find.text('Microsoft Clarity: session replay'), findsNothing);
   });
 }
