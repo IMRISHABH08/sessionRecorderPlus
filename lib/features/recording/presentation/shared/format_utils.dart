@@ -15,7 +15,7 @@ String formatDuration(Duration d) {
   return '${m}m ${s}s';
 }
 
-// file size ≈ bitrate × duration (recordingRequirement.md) — shown in
+// file size ≈ bitrate × duration (problemStatement.md) — shown in
 // reverse here so the payload size number means something on its own.
 String? formatBitrate(int? bytes, Duration duration) {
   final cannotComputeBitrate = bytes == null || duration.inMilliseconds <= 0;

@@ -1,6 +1,8 @@
 # SessionRecorderPlus
 
-Flutter widget-recording comparison app. See `recordingRequirement.md` for the original problem statement and `recorderPlan.md` for the implementation plan and ranking table.
+SessionRecorderPlus is a Flutter app that captures a user's on-screen session automatically — no manual start/stop — and compares approaches for doing it. It puts native `widget_recorder_plus` video, a lightweight custom Hybrid event-triggered screenshot/timeline tracker, and Microsoft Clarity side by side against the same interaction flow. Captured sessions are split into chunks, tagged with metadata, and uploaded in the background so nothing is lost even if the app is killed mid-recording.
+
+See `problemStatement.md` for the original problem statement.
 
 [LLD: Engineering Doc](https://bright-daffodil-e363c1.netlify.app/ "Engineering Documentation")
 
